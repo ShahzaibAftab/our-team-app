@@ -5,7 +5,7 @@
       
       </div>
   
-      <h2 class="mt-4 text-xl font-bold text-blue-900">{{ name }}</h2>
+      <h2 class="mt-4 text-xl font-bold text-blue-900">{{ price }}</h2>
   
       <p class="text-gray-500 mb-2 text-sm">{{ title }}</p>
       <p class="text-gray-500 mt-2 text-sm">{{ description }}</p>
@@ -29,7 +29,7 @@
   export default {
     name: 'Card',
     props: {
-      name: {
+      price: {
         type: String,
         default: 'Jane Doe'
       },
@@ -41,9 +41,6 @@
         type: String,
         default: 'Description goes here'
       },
-      twitter: String,
-      linkedin: String,
-      github: String
     },
   }
   </script>
